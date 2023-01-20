@@ -1,0 +1,156 @@
+* {
+    margin: 0;   
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header,
+section h2,
+section h3,
+form button {
+    font-family: 'Bungee', cursive;
+    font-weight: normal;
+}
+
+body, input, textarea {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    padding: 16px 0;
+    background-color: #182C61;
+    color: #ecf0f1;
+    position: fixed;
+    width: 100%;
+}
+
+#about > .container {
+    margin-top: 65px;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;    
+}
+
+header nav li a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+header nav li a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1280px; /*com o max-widht e width eu falo que a largura vai ser 100% ate 1280, passando dissio vai ficar sempre centralizado na tela*/ 
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container,
+section .container {
+    display: flex;
+    align-items: center;
+    /*com o display flex e o align-items eu consigo alinhar horizontalmente o h1 e as duas l1*/
+    justify-content: space-between; /*Essa serve para separar o titulo h1 do nav, colocando um espaço entre os 2*/
+}
+
+.brands-list img {
+    height: 24px;
+    margin-right: 8px;
+}
+
+.brands-list li {
+    display: inline;
+}
+
+section .container {
+    align-items: flex-start;
+}
+
+section {
+    padding: 24px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+section {
+    color: #182C61;
+}
+
+section p {
+    margin-bottom: 8px;
+}
+
+.store-front {
+    margin-right: 32px;
+}
+
+.social-links img {
+    height: 24px;
+}
+
+#contact .container {
+    display: block;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea {
+    resize: none; /* Para impedir que o usuario mude o tamanho do campo de mensagem*/
+    height: 180px;
+}
+
+.social-links li {
+    display: inline; /*o inline serve para alinhar os conteudos horizontalmente*/
+    margin-right: 8px;
+
+}
+
+.social-links li a {
+    text-decoration: none;
+}
+
+section h3 {
+    margin-bottom: 16px;
+}
+
+form button {
+    background-color: #182C61;
+    color: #ecf0f1;
+    border: none;
+    cursor: pointer;
+
+}
+
+form button:hover {
+    background-color: #24408f;
+}
+
+input:focus, textarea:focus {
+    outline-color: #182C61;
+}
+
+footer {
+    background-color: #182C61;
+    color: #ecf0f1;
+    padding: 16px 0 ;
+    text-align: center;
+}
